@@ -1,0 +1,92 @@
+html, body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 300ms ease-in;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+}
+
+a {
+  text-decoration: none;
+  color: beige;
+  padding: 15px 30px;
+}
+
+a:hover {
+  color: coral;
+}
+
+a:active {
+  transform: scale(1.1);
+  transition: 200ms ease;
+}
+
+input {
+  margin-right: 15px;
+  margin-left: 35px;
+  width: 400px;
+  border: 0;
+  border-bottom: 1px dotted gray;
+}
+
+h1 {
+  padding: 15px;
+  color: beige;
+}
+
+button {
+  border: none;
+  background: cornflowerblue;
+  box-shadow: 2px 2px 2px gray;
+  padding: 10px;
+}
+
+button:active {
+  box-shadow: 0 0 0;
+  transition: 200ms ease;
+}
+
+span {
+  color: cornflowerblue;
+}
+
+table {
+  margin: 50px;
+}
+
+th, td {
+  width: 150px;
+  text-align: left;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: steelblue;
+}
+
+.header div {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
