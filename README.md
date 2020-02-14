@@ -3,7 +3,7 @@ URL shortener
 
 ### What is a URL shortening system?
 
-- system which for generates a short key for the provided URL
+- system which generates a short key for the provided URL
 - user can use the key to be redirected to the initial URL (e.g. https://service-url/:short-key)
 
 ### What's the main value and who needs such a system & why?
