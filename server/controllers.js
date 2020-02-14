@@ -37,11 +37,13 @@ const getPopular = (req, res, next) => {
   if (!type || typeof limit !== 'number') {
     res.sendStatus(400);
   } else {
-    Url.getPopular(type, limit)
-    .then(rec => {
-      res.json(rec);
-    })
-    .catch(err => next(err));
+    Url.find({}, "-_id -__v")
+      .then(rec => {
+        const sortedRecords = rec.sort((a, b) => b[type] - a[type]);
+        sortedRecords.splice(limit);
+        res.json(sortedRecords);
+      })
+      .catch(err => next(err));
   }
 };
 

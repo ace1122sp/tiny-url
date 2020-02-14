@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 
+app.use('/public', express.static(process.cwd() + '/public'));
 app.use('/', router);
 
 app.use((err, req, res, next) => {

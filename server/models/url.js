@@ -54,10 +54,6 @@ UrlSchema.statics.getSingle = short => {
     });
 }
 
-UrlSchema.statics.getPopular = function(type, limit) {
-  return this.find({}, '-_id -__v').sort({ [type]: 1 }).limit(limit);
-};
-
 UrlSchema.virtual('last_get_count').get(function() {
   return this.get_hits.filter(
     date => date.valueOf() > Date.now() - 24 * 60 * 60 * 1000
