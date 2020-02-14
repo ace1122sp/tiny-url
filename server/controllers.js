@@ -6,9 +6,8 @@ const getShort = (req, res, next) => {
   Url.getSingle(short)
     .then(rec => {
       if (rec) {
-        console.log(rec.last_get_count)
-        const { original, short } = rec;
-        res.json({ original, short, last_get_count: rec.last_get_count });
+        const { original } = rec;
+        res.redirect(`https://${original}`);
       } else {
         next();
       }
