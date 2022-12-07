@@ -21,9 +21,9 @@
   "homepage": "https://github.com/ace1122sp/tiny-url#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mongoose": "^5.8.11",
     "morgan": "^1.9.1",
     "prop-types": "^15.7.2",
